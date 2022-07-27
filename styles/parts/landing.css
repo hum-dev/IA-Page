@@ -54,11 +54,16 @@
   align-items: center;
 }
 #landing .intro h2 {
+  position: relative;
   color: #fff;
   margin-top: 40%;
   font-size: 2em;
   width: 30%;
   text-align: left;
+  /* animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3; */
 }
 @media (min-width: 692px) {
   #landing .intro h2 {
@@ -77,3 +82,73 @@
   padding: 15px 25px;
   color: #F68712;
 }/*# sourceMappingURL=landing.css.map */
+#landing .intro span {
+  position: absolute;
+  text-align: center;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+/* start of keyframe */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+    @keyframes fade-bottom {
+      0%{
+          transform:translateY(50px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  @keyframes fade-left {
+      0%{
+          transform: translateX(-100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+  @keyframes fade-right {
+      0%{
+          transform: translateX(100px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+  
+
+/* end of keyframe */

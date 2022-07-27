@@ -23,7 +23,7 @@
 #about #phone {
   position: absolute;
   left: 0;
-  width: auto;
+  width: 100px;
   margin: auto;
   height: 40vh;
   margin-top: 5vh;
@@ -32,8 +32,17 @@
   #about #phone {
     top: 60%;
     width: 300px;
-    transform: rotate(15deg);
+   transform: rotate(15deg);}
   }
+@media only screen and 
+(min-device-width: 320px) and
+(min-device-width: 480px) {
+  #about #phone {
+    top: 40%;
+    width: 100px;
+    transform: rotate(5deg);
+  }
+
 }
 #about #content_container p {
   text-align: center;

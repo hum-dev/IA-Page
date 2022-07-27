@@ -74,9 +74,16 @@ $mobile:50%;
             font-size: 2.0em;
             width: 30%;
             text-align: left;
+            span{
+                animation-name: moveInRight;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+            }
             @include tablets{
                 width: 100%;
                 margin-top: 0;
+            }
+
             }
         }
         .button{
@@ -91,4 +98,4 @@ $mobile:50%;
             }
         }
     }
-}
+
