@@ -1,0 +1,41 @@
+#about {
+  height: 50vh;
+  position: relative;
+  padding-top: 60px;
+  align-items: center;
+  text-align: center;
+}
+#about .title_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .title_header .extend {
+  background-color: black;
+  color: transparent;
+  width: 2rem;
+  height: 0.3rem;
+  border-radius: 0.5rem;
+}
+#about .title_header h1 {
+  margin-inline: 1rem;
+}
+#about #phone {
+  position: absolute;
+  left: 0;
+  width: auto;
+  margin: auto;
+  height: 40vh;
+  margin-top: 5vh;
+}
+@media (max-width: 600px) {
+  #about #phone {
+    top: 60%;
+    width: 300px;
+    transform: rotate(15deg);
+  }
+}
+#about #content_container p {
+  text-align: center;
+  margin-top: 3em;
+}/*# sourceMappingURL=about.css.map */
